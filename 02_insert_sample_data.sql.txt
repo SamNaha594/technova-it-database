@@ -1,0 +1,40 @@
+-- Sample customers
+
+INSERT INTO customers (customer_name, email, phone)
+VALUES ('Rahim Ahmed', 'rahim@example.com', '01710000001');
+
+INSERT INTO customers (customer_name, email, phone)
+VALUES ('Nusrat Jahan', 'nusrat@example.com', '01810000002');
+
+INSERT INTO customers (customer_name, email, phone)
+VALUES ('ABC Trading Ltd', 'abc@example.com', '01910000003');
+
+-- Sample services
+
+INSERT INTO services (service_name, category, base_price)
+VALUES ('Website Development', 'Development', 25000);
+
+INSERT INTO services (service_name, category, base_price)
+VALUES ('Mobile App Development', 'Development', 60000);
+
+INSERT INTO services (service_name, category, base_price)
+VALUES ('IT Consultancy', 'Consultancy', 10000);
+
+INSERT INTO services (service_name, category, base_price)
+VALUES ('Database Management', 'Database', 15000);
+
+-- Sample orders
+
+INSERT INTO orders (customer_id, service_id, quantity, unit_price)
+VALUES (1, 1, 1, 25000);
+
+INSERT INTO orders (customer_id, service_id, quantity, unit_price)
+VALUES (1, 3, 2, 9000);
+
+INSERT INTO orders (customer_id, service_id, quantity, unit_price)
+VALUES (2, 2, 1, 60000);
+
+INSERT INTO orders (customer_id, service_id, quantity, unit_price)
+VALUES (3, 4, 3, 14000);
+
+COMMIT;
